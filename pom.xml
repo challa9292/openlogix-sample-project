@@ -31,21 +31,17 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.4.0</muleVersion>
-						<username>raghavendra12345678</username>
-						<password>Raghavendra12345678</password>
-						<applicationName>openlogix-sample-project</applicationName>
-						<environment>Sandbox</environment>
-						<region>us-east-2</region>
-						<workers>1</workers>
-						<objectStoreV2>true</objectStoreV2>
-						<workerType>MICRO</workerType>
-						<businessGroup>2217033e-973b-4105-9154-5244d3c345ea</businessGroup>
-						<properties>
-							<key>value</key>
-						</properties>
-					</cloudHubDeployment>
+			            <uri>https://anypoint.mulesoft.com</uri>
+			            <muleVersion>${mule.version}</muleVersion>
+			            <username>raghavendra12345678</username>
+			            <password>Raghavendra12345678</password>
+			            <environment>Sandbox</environment>
+			            <applicationName>${appname}</applicationName>
+			            <businessGroup>2217033e-973b-4105-9154-5244d3c345ea</businessGroup>
+			            <workerType>MICRO</workerType>
+			            <workers>1}</workers>
+			            <objectStoreV2>true</objectStoreV2>
+			        </cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
