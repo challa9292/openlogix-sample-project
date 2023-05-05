@@ -32,13 +32,13 @@
 				<configuration>
 					<cloudHubDeployment>
 			            <uri>https://anypoint.mulesoft.com</uri>
-			            <muleVersion>${mule.version}</muleVersion>
+			            <muleVersion>4.4.0</muleVersion>
 			            <username>raghavendra12345678</username>
 			            <password>Raghavendra12345678</password>
 			            <environment>Sandbox</environment>
-			            <applicationName>${appname}</applicationName>
+			            <applicationName>openlogix-sample-project</applicationName>
 			            <businessGroup>2217033e-973b-4105-9154-5244d3c345ea</businessGroup>
-			            <workerType>MICRO</workerType>
+			            <workerType>Micro</workerType>
 			            <workers>1}</workers>
 			            <objectStoreV2>true</objectStoreV2>
 			        </cloudHubDeployment>
