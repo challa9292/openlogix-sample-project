@@ -26,19 +26,19 @@ jobs:
           java-version: "11"
 
       - name: Clean Mule Project
-        run: mvn clean -B package deploy -DmuleDeploy - .maven/settings.xml
+        run: mvn clean -B -s .maven/settings.xml
 
 
-      # - name: Run Munits
-      #   run: mvn clean test
+      - name: Run Munits
+        run: mvn clean test
 
-      # - name: Package Mule project
-      #   run: mvn clean package
+      - name: Package Mule project
+        run: mvn clean package
 
-      # - name: Api Mgr entry Shell script
-      #   run: sh install.sh       
+      - name: Api Mgr entry Shell script
+        run: sh install.sh       
 
-      # - name: Deploy package
-      #   run: mvn clean deploy -DmuleDeploy        
+      - name: Deploy package
+        run: mvn clean deploy -DmuleDeploy -s .maven/settings.xml
 
      
